@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="overflow-x-hidden">
+<body>
 
     <!-- navbar -->
     <div class="navbar flex h-[50px] justify-between lg:mx-auto my-[24px] gap-14">
@@ -43,7 +43,7 @@
                     class="inter-bold">0</span><img class="h-[22px] w-[22px]" src="./assets/heart.png" alt=""></button>
             <button class="h-10 w-20 lg:h-[52px] lg:w-[110px] bg-[#41FF6B1A] rounded-4xl flex items-center justify-center gap-1"><span id="coin-value"
                     class="inter-bold">100</span><img class="h-[22px] w-[22px]" src="./assets/coin.png" alt=""></button>
-            <button class="h-[52px] w-[110px] hidden lg:flex  bg-[#00A63E] rounded-4xl items-center justify-center inter-normal text-white gap-1"><span id="copy-value">0</span>Copy</button>
+            <button class="h-[52px] w-[110px] hidden md:flex  bg-[#00A63E] rounded-4xl items-center justify-center inter-normal text-white gap-1"><span id="copy-value">0</span>Copy</button>
         </div>
     </div>
 
@@ -68,8 +68,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">999</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">All</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()"  class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('999')"  class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('National Emergency Service', '999')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card2 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -82,8 +82,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">999</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">Police</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('999')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Police Helpline Service', '999')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card3 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -96,8 +96,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">999</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">Fire</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('999')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Fire Service', '999')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card4 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -110,8 +110,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">1994-999999</h1>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">Health</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('1994-999999')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Ambulance Service', '1994-999999')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card5 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -124,8 +124,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">109</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">Help</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('109')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Women & Child Helpline', '109')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card6 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -138,8 +138,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">106</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">Govt.</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('106')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Anti-Corruption Helpline', '106')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card7 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -152,8 +152,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">16216</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">Electricity</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('16216')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Electricity Helpline', '16216')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card8 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -166,8 +166,8 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">16445</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">NGO</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('16445')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Brac Helpline','16445')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
             <div class="card9 bg-white w-auto h-auto lg:w-[400px] lg:h-[350px] p-4 lg:p-7 rounded-2xl shadow-sm">
@@ -180,13 +180,13 @@
                 <h2 class="text-2xl lg:text-3xl font-bold">163</h2>
                 <p class="px-3 py-1 lg:px-5 lg:py-2 text-md text-gray-500 bg-[#F2F2F2] rounded-3xl inline-block">Travel</p>
                 <div class="buttons pt-4 lg:pt-8 flex justify-between w-full gap-2">
-                    <button onclick="increaseCopy()" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button onclick="decreaseCoin()" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button onclick="increaseCopy('163')" class=" h-[40px] w-[48%] border-2 text-gray-500 border-[#F2F2F2] rounded-lg cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button onclick="decreaseCoin('Bangladesh Railway Helpline', '163')" class=" h-[40px] w-[48%] bg-[#00A63E] rounded-lg text-white cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>  
         </div>
         <div class="history p-7 flex-1 bg-white rounded-2xl shadow-sm">
-            <div class="flex justify-between">
+            <div class="flex justify-between pb-4">
             <div class="flex items-center gap-2">
                 <i class="fa-regular fa-clock"></i>
                 <h2 class="font-medium text-xl">Call History</h2>
@@ -194,13 +194,9 @@
             <button class="h-[52px] w-[110px] bg-[#00A63E] rounded-4xl flex items-center justify-center inter-normal text-white gap-1">Clear</button> 
             </div> 
             <!-- history -->
-            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-xl my-4 p-4">
-                <div>
-                    <p class="font-semibold text-lg">Fire Service Number</p>
-                    <h3 class="font-normal text-lg text-[#5C5C5C]">999</h3>
-                </div>
-                <div>11:36:58 AM</div>
-            </div> 
+            <div id="add-history">
+                
+            </div>
             
         </div>
     </section>
