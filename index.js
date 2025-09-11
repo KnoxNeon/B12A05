@@ -19,7 +19,7 @@ const decreaseCoin = (serviceName, serviceNumber) =>{
         let coinValueConverted = parseInt(coinValue);
         coinValueConverted = coinValueConverted - 20;
 
-        alert(`📞 Calling ${serviceName} ${serviceNumber}`);
+        alert(`📞 Calling ${serviceName} ${serviceNumber}....`);
         let coinValueUpdate = document.getElementById("coin-value");
         coinValueUpdate.innerHTML = coinValueConverted;
 
