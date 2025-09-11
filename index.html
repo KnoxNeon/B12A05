@@ -57,8 +57,8 @@
 
     <!-- container section -->
 
-    <section class="flex bg-[#F5FFF6]">
-        <div class="cards grid grid-cols-3 p-8 gap-6">
+    <section class="flex bg-[#F5FFF6] p-10 gap-16 flex-3">
+        <div class="cards grid grid-cols-3 gap-6">
             <div class="card1 bg-white w-[400px] h-[350px] p-7 rounded-2xl shadow-sm">
                 <div class="logos flex items-center justify-between pb-4">
                     <div class=" flex items-center justify-center rounded-2xl bg-[#FFE3E2] h-[60px] w-[60px]"><img class="h-[32px] w-[32px] " src="./assets/emergency.png" alt=""></div>
@@ -186,7 +186,24 @@
                 </div>
             </div>  
         </div>
-        <div class="history"></div>
+        <div class="history p-7 flex-1 bg-white rounded-2xl shadow-sm">
+            <div class="flex justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fa-regular fa-clock"></i>
+                <h2 class="font-medium text-xl">Call History</h2>
+            </div>
+            <button class="h-[52px] w-[110px] bg-[#00A63E] rounded-4xl flex items-center justify-center inter-normal text-white gap-1">Clear</button> 
+            </div> 
+            <!-- history -->
+            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-xl my-4 p-4">
+                <div>
+                    <p class="font-semibold text-lg">Fire Service Number</p>
+                    <h3 class="font-normal text-lg text-[#5C5C5C]">999</h3>
+                </div>
+                <div>11:36:58 AM</div>
+            </div> 
+            
+        </div>
     </section>
 
 </body>
