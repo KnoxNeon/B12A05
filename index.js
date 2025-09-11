@@ -38,6 +38,11 @@ const decreaseCoin = (serviceName, serviceNumber) =>{
     }    
 }   
 
+const clearHistory = () =>{
+    const clearBtn = document.getElementById("add-history");
+    clearBtn.innerHTML = '';
+}
+
 const increaseCopy = (serviceNumber) =>{
     let copyValue = document.getElementById("copy-value").innerHTML
     let copyValueConverted = parseInt(copyValue);
